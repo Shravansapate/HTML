@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Group B Practical-1</title>
+
+    <script type="text/javascript">
+    
+function message() {
+        window.status= "Welcome to IT Zone"
+            }
+
+function changecolor1() {
+
+            document.bgColor= "aqua";
+
+            window.setTimeout("changecolor2()", 2000);
+
+                    }
+
+function changecolor2() {
+            
+            document.bgColor= "green";
+
+        window.setTimeout("changecolor3()",2000);
+        
+                    }
+
+function changecolor3() {
+
+                document.bgColor= "orange";
+
+                window.setTimeout("changecolor4()", 2000);
+
+                    }
+
+function changecolor4() {
+
+                document.bgColor= "pink";
+                
+                window.setTimeout("changecolor5()", 2000);
+
+                    }
+
+function changecolor()  {
+
+                document.bgColor= "blue";
+                
+                window.setTimeout("changecolor6()", 2000);
+
+                    }
+
+function changecolor()  {
+
+                document.bgColor= "yellow";
+
+                window.setTimeout("changecolor7()", 2000);
+
+                    }
+
+function changecolor7() {
+
+                        document.bgColor= "purple";
+
+                        window.setTimeout("changecolor1()", 2000);
+
+                    }
+
+    </script>
+
+</head>
+
+    <body>
+
+        <h1>Change Background color after every 2 seconds</h1>
+        
+        <input type="button" value="Change color" onmouseover="changecolor1()">
+        
+        <input type="button" value="Display message" onclick="message()">
+        
+        <h3>Made by shravan sapate.</h3>
+
+                </body>
+
+                
+
+</html>

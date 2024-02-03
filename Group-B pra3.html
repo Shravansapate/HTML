@@ -1,0 +1,54 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+     <title>Vowel counter JS</title>
+
+<script type="text/javascript">
+
+function countvowels ()
+    {
+var count, str, size;
+
+count=0;
+
+str = document.form1.string.value; 
+
+str = str.toLowerCase(); 
+
+size=str.length; 
+
+for(i=0;i< size; i=i+1)
+    { 
+        S=str.charAt(i);
+        if( S == "a" || S=="e" || S=="i")
+        {
+          count = count +1;
+        }
+    }
+
+document.form1. result.value = count;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="form1">
+
+Enter String: <input type="text" name="string"><br><br>
+
+ Number of vowels:<input type="text" name="result"><br><br>
+ 
+ <input type="button" value="Count Vowels" onclick="countvowels()">
+
+</form>
+
+<h3 style="font-family: Algerian;">--Made by shravan sapate.</h3>
+
+</body>

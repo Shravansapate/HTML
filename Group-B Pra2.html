@@ -1,0 +1,61 @@
+﻿<html>
+
+<head>
+    <title>Info Validation</title>
+
+    <script language="javascript">
+
+        function check_email() {
+
+            var L, email, A, AE, D, DE;
+
+            email = form1.email.value;
+
+            L = email.length;
+
+            A = email.indexOf("@"); 
+
+            AE = email.lastIndexOf("@");
+
+            D = email.indexOf(".");
+
+            DE = email.lastIndexOf(".");
+
+            if (A < 1 || AE == L - 1 || A != AE) {
+
+                alert("Invalid Email Address")
+
+            }
+
+            else {
+
+                alert("Valid Email Address");
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form name="form1">
+
+        Enter Name: <input type="text" name="fname"><br><br>
+
+        Address: <textarea cols=20 rows=5 name="" address" placeholder="Write address here!"></textarea><br><br>
+
+        Telephone Number: <input type="tel" maxlength="10" name="tele"><br><br>
+
+        Email Address: <input type="email" name="email" pattern="[a-z0-9._+-]+@[a-z0-9]+.[a-z]{2,}$"
+            placeholder="xyz@gmail.com"><br><br>
+
+        <input type="button" value="Check Validation" onclick="check_email()">
+
+    </form>
+
+    <h3 style="font-family: Algerian;">--Made by shravan sapate</h3>
+
+</body>

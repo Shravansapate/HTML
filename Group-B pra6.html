@@ -1,0 +1,96 @@
+<html>
+
+<head>
+
+    <title>Result calculator</title>
+
+    <script type="text/javascript">
+
+        function calculate(){
+
+            var phy, chem, math, bio, eng, infotech, average, total, grade;
+
+            phy=parseInt(form1.physics.value);
+            
+            chem=parseInt(form1.chem.value); 
+            
+            math=parseInt(form1.maths.value);
+            
+            bio=parseInt(form1.bio.value);
+            
+            eng=parseInt(form1.eng.value);
+
+            infotech=parseInt(form1.info.value);
+
+                total=phy + chem + math + bio + eng + infotech;
+                
+                average=total / 6;
+                
+                form1.avg.value=average;
+                
+                    ave=parseInt(average);
+
+            if (ave>=35 && ave<=60)
+                { grade="F"; }
+
+            if (ave>=61 && ave<=70)
+                 { grade="D"; }
+
+            if (ave>=71 && ave<=80)
+                { grade="C"; }
+
+            if (ave>=81 && ave<=90)
+                { grade="B"; }
+
+            if (ave>=91)
+                { grade="A"; }
+            
+        form1.grade.value=grade; 
+        }
+
+        
+
+
+
+</script>
+
+</head>
+
+<body>
+
+    <form name="form1">
+
+        <h3>Enter Marks of following Subjects:</h3>
+
+            <hr color="red">
+
+            Physics <input type="text" name="physics"><br><br>
+
+            Chemistry: <input type="text" name="chem">
+            
+            Mathematics: <input type="text" name="maths">
+            
+            Biology: <input type="text" name="bio"> 
+            
+            English: <input type="text" name="eng">
+            
+            Information Technology: <input type="text" name="info">
+            
+            <hr color="red">
+
+            Average Marks: <input type="text" name="avg"><br><br> 
+            
+            Grade:<input type="text" name="grade"><br><br>
+
+<hr color="red"> 
+
+<input type="button" value="Calculate" onclick="calculate()">
+
+</form>
+
+
+<h3 style="font-family: Algerian;">--Made shravan sapate...</h3>
+
+</body>
+
+</html>

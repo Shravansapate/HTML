@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+
+<title>Date & Time evaluator</title>
+
+<script>
+
+    function difference() {
+
+        date1=form1.date1.value;
+
+        date2=form1.date2.value;
+
+
+
+        m1=date1.substring(0, 2);
+
+        d1=date1.substring(3, 5);
+
+        yy1=date1.substring = (6, 10);
+
+        var date1=new Date(d1 + "/" + m1 + "/" + yy1);
+
+        m2=date2.substring(0, 2);
+
+        d2=date2.substring(3, 5);
+
+        yy2=date2.substring(6, 10);
+
+        var date2=new Date(d2 + "/" + m2 + "/" + yy2);
+
+        // time difference
+        var timeDiff=date2.getTime() - date1.getTime();
+
+        // days difference
+        var diffDays=Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+        form1.diff.value=diffDays;
+
+    }
+
+</script>
+
+<body>
+
+    <form name="form1">
+
+        Enter First Date <input type="text" name="date1" placeholder="dd/mm/yyyy"><br><br>
+
+        Enter Second Date <input type="text" name="date2" placeholder="dd/mm/yyyy"><br><br>
+
+        <hr color="red">
+
+        Difference in days <input type="text" name="diff"><br><br>
+
+        <input type="button" value="Find difference in days" onclick="difference()">
+
+    </form>
+
+    <h2>Made by SHRAVAN SAPATE</h2>
+    
+</body>
+
+</html>
